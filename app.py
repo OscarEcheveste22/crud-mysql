@@ -3,6 +3,8 @@ from flask import Flask
 
 app = Flask(__name__)
 # Conexión a la base de datos MySQL
+@app.route('/estudiantes')
+
 def conectar():
     return pymysql.connect(
         host='157.245.141.164',  # Cambia esto si tu DB está en otro lugar
